@@ -1,4 +1,10 @@
-const ProductCard = ({ product }: { product: any }) => {
+interface Product {
+  image: string;
+  title: string;
+  price: number;
+}
+
+const ProductCard = ({ product }: { product: Product }) => {
     return (
         <div className="border border-gray-300 rounded-lg p-4 flex flex-col">
             <img
